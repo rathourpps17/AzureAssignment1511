@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../public/in.css">
+    </head>
+    <body>
+        <header  class="navbar" style="height:60px; margin-bottom:0 ;">
+            <h1 style="float:left;width:92%;">Result Management System</h1>
+            {{#if msg2}}  
+            <button  class="button" onclick="window.location.href='login'">Log out</button>
+            {{/if}}
+        </header>
+        <button class="button-7" role="button" onclick="window.location.href='http://localhost:3004/record'">Add Record</button>
+        <div style="padding-left:25% ;padding-top:3%";>
+            {{#if msg4}}
+                <table class="table2 th2 td2" >
+                    <tr >
+                        <th class="table2 th2 td2"><label>Roll Number</label></th>
+                        <th class="table2 th2 td2"><label>NAME</label></th>
+                        <th class="table2 th2 td2"><label>D.O.B</label></th>
+                        <th class="table2 th2 td2"><label>Score</label></th>
+                        <th class="table2 th2 td2"><label>actions</label></th>
+                    </tr>
+                {{#each result2}}
+                    <tr >
+                        <td class="table2 th2 td2">{{this.rollno }}</td>
+                        <td class="table2 th2 td2">{{this.name }}</td>
+                        <td class="table2 th2 td2">{{this.dob }}</td>
+                        <td class="table2 th2 td2">{{this.score }}</td>
+ 
+                        <td class="table2 th2 td2">
+                            <button  style="background-color:rgba(6, 62, 99, 0.587) ;" class="button" onclick="window.location.href='update/{{this.rollno}}'">Edit</button>
+                            <input type="button"  class="button" value="Delete" onclick="window.location.href='http://localhost:3004/delete/{{this.rollno}}' "></button>
+                        </td>
+                    </tr>
+                {{/each}}
+            </table>
+            {{/if}}
+            {{#if msg3}}
+                <div style="text-align:40%">
+                    <h1 style="padding-left:15%;color:green;font-size:50px "> No record found</h1>
+                </div>
+            {{/if}}
+        </div>
+  
+    
+ 
+    </body>
+</html>

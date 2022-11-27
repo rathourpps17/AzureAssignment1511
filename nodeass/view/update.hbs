@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/in.css">
+</head>
+<body>
+    <Header  class="navbar">
+      <h1>Result Management System</h1>
+    </Header>
+    
+    <div style="padding-left:35% ;padding-top:1%";>
+        <form action="/doupdate">
+            {{#each result2}}
+    <table>
+        <tr>
+            <td><label style="font-family:cursive;font-size:30px">Roll No : </td>
+            <td><input name="rollno"  maxlength="15" readonly value="{{this.rollno}}" ></td>
+        </tr>
+        <tr>
+            <td> <label style="font-family:cursive;font-size:30px">NAME : </label></td>
+            <td><input name="name"   maxlength="10" value="{{this.name}}"></td>
+        </tr>
+        <tr>
+            <td><label style="font-family:cursive;font-size:30px">D.O.B : </label></td>
+            <td><input name="dob"   maxlength="15" value="{{this.dob}}"></td>
+        </tr>
+        <tr>
+            <td> <label style="font-family:cursive;font-size:30px">SCORE : </label></td>
+            <td><input  name="score"  maxlength="10" value="{{this.score}}"></td>
+        </tr>
+        <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+        <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+        <tr>  
+        <td>
+            <input type="submit" Value="Update Data" class="button-7"/>  
+        </td>
+        </tr>
+     </table>
+       {{/each}}
+    </form>
+    </div>
+</body>
+</html>

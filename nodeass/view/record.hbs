@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/in.css">
+</head>
+<body>
+    <Header  class="navbar">
+      <h1 style="float:left;width:92%;">Result Management System</h1>  
+      <button   class="button" onclick="window.location.href='login'">Log out</button>
+    </Header>
+    
+    <div style="padding-left:35% ;padding-top:1%";>
+        <form action="adddata">
+    <table>
+        <tr>
+            <td><label style="font-family:cursive;font-size:30px">Roll No : </td>
+            <td><input name="rollno"  maxlength="15" placeholder="Enter ID" ></td>
+        </tr>
+        <tr>
+            <td> <label style="font-family:cursive;font-size:30px">NAME : </label></td>
+            <td><input name="name"   maxlength="10" placeholder="Enter Name"></td>
+        </tr>
+        <tr>
+            <td><label style="font-family:cursive;font-size:30px">D.O.B : </label></td>
+            <td><input name="dob"   maxlength="15" placeholder="Enter D.O.B"></td>
+        </tr>
+        <tr>
+            <td> <label style="font-family:cursive;font-size:30px">SCORE : </label></td>
+            <td><input  name="score"  maxlength="10" placeholder="Enter score"></td>
+        </tr>
+        <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+        <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+        <tr>  
+        <td>
+            <input type="submit" Value="Submit Data" class="button-7"/>  
+        </td>
+        </tr>
+     </table>
+    </form>
+    </div>
+     {{#if flag}}
+                <div style="text-align:40%">
+                    <h1 style="padding-left:15%;color:green;font-size:50px ">Data with given Rollno Already Exist</h1>
+                </div>
+    {{/if}}
+</body>
+</html>

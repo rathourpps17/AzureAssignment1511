@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+}
+.navbar{
+    padding:2%;
+    padding-bottom:2%;
+    padding-right:0;
+    margin-bottom:5%;
+    font-size:larger;
+    color:red;
+    background-color: aqua;
+    text-align: center;
+    }
+    
+    .textad{
+    margin-left: 37%;
+    font-size:larger;
+    }
+    
+    .button{
+      background-color: rgb(0, 140, 255);
+      border-radius:3px;
+      padding:1%;
+    }
+
+    /* CSS */
+.button-7 {
+  background-color: #0095ff;
+  border: px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 2%;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-7:hover,
+.button-7:focus {
+  background-color: #07c;
+}
+
+.button-7:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-7:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+    
+    a{
+        display: inline;
+        padding:15px;
+        padding-left:25px;
+        padding-right:25px;
+        margin: 20px;
+        width: 50%;
+        height: 30%;
+    }
+    
+    .table2, .th2, .td2 {
+      padding:5px;
+      border: 1px solid green;
+      border-width:2px  ;
+      border-collapse: collapse;
+    }

@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/416e8ffa-7bbe-47cc-828e-c8dc7d3f8c58/AppServices/subscriptions/416e8ffa-7bbe-47cc-828e-c8dc7d3f8c58/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/Azureassignment15111511",
+    "appService.deploySubpath": "view"
+}

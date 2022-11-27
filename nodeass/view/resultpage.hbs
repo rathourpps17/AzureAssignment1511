@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/in.css">
+</head>
+<body>
+<Header  class="navbar">
+      <h1>Result Management System</h1>
+</Header>
+{{#each us}}
+<div  style="padding-left:35%;padding-top:4%;font-size:large">
+    <table >
+        <tr>
+        <td style="text-align:right;"><label style="font-family:cursive;font-size:30px">Roll Number : </label></td>
+        <td style="font-family:cursive;font-size:30px;color:blue">{{this.rollno}}</td>
+    </tr>
+    <tr>
+        <td style="text-align:right;"> <label style="font-family:cursive;font-size:30px">Name : </label></td>
+        <td style="font-family:cursive;font-size:30px;color:blue">{{this.name}}</td>
+    </tr>
+    <tr>
+        <td style="text-align:right;"> <label style="font-family:cursive;font-size:30px">D.O.B. : </label></td>
+        <td style="font-family:cursive;font-size:30px;color:blue">{{this.dob}}</td>
+    </tr>
+    <tr>
+        <td style="text-align:right;"> <label style="font-family:cursive;font-size:30px">Score : </label></td>
+        <td style="font-family:cursive;font-size:30px;color:blue">{{this.score}}</td>
+    </tr>
+    </table>
+</div>
+{{/each}}
+</body>
+</html>

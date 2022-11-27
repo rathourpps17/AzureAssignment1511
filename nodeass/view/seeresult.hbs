@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/in.css">
+</head>
+<body >
+    <Header  class="navbar">
+      <h1>Result Management System</h1>
+    </Header>
+   <form action="getresult">
+<div style="padding-left:35%;padding-top:4%;font-size:large">
+    <table>
+     <tr>
+        <td><label style="font-family:cursive;font-size:30px">Enter Rollno : </label></td>
+        <td><input type="text" name="rollno" maxlength="15" placeholder="Your ID" required="required"></td>
+     </tr>
+     <tr></tr>       
+     <tr>
+        <td> <label  style="font-family:cursive;font-size:30px">Enter D.O.B. : </label></td>
+        <td><input type="text" name="dob" maxlength="10" placeholder="Enter Password"  required="required"></td>
+     </tr>
+     <tr></tr><tr></tr><tr></tr><tr></tr>
+     <tr></tr><tr></tr><tr></tr><tr></tr>
+     <tr></tr><tr></tr><tr></tr><tr></tr>
+     <tr></tr><tr></tr><tr></tr><tr></tr>
+     <tr>
+        <td>
+            <input type="submit" Value="See Result" class="button-7"  />  
+        </td>
+     </tr>
+    </table>
+</div>
+</form>
+{{#if msg1}}
+    <div style="margin:10px;padding:10px;text-align:center">
+        <h1 style="color:green;"> Invalid Credentials</h1>
+    </div>
+{{/if}}
+</body>
+</html>
